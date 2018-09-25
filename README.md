@@ -1,5 +1,11 @@
 # Burger Builder React App from Udemy React Course
 
+
+## Scoped css enabled
+npm run eject
+updated webpack.config.dev.js and prod.js [see commits]
+
+# End here
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 zBelow you will find some information on how to perform common tasks.<br>
