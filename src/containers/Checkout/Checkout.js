@@ -16,6 +16,18 @@ class Checkout extends Component {
 
     }
 
+    // Will be called when mounted from router
+    componentDidMount() {
+        const query = new URLSearchParams(this.props.location.search);
+        const ingredients = {};
+        for (let param of query.entries()) {
+            ingredients[param[0]] = +param[1];
+
+        }
+        this.setState({ingredients: ingredients});
+
+    }
+
     checkoutCannceledHandler = () => {
         this.props.history.goBack();
     }
